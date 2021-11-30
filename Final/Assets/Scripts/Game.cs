@@ -11,6 +11,8 @@ namespace BrutalCards
     {
         public Text MessageText;
 
+        Card cardConfirm = null;
+
         protected CardAnimator cardAnimator;
 
         [SerializeField]
@@ -350,11 +352,17 @@ namespace BrutalCards
                         selectedCard.OnSelected(false);
                         selectedRank = 0;
                     }
+                    
+                    if (cardConfirm == card){
+                        OnOkSelected();
+                        cardConfirm = null;
+                    }
 
                     selectedCard = card;
                     selectedRank = selectedCard.Rank;
                     selectedCard.OnSelected(true);
                     SetMessage($"Ask {currentTurnTargetPlayer.PlayerName} for {selectedCard.Rank}s ?");
+                    cardConfirm = card;
                 }
             }
         }
