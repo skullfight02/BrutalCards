@@ -53,10 +53,12 @@
      <Compile Include="Assets\SWNetwork\Tools\NonPlayerFilter.cs" />
      <Compile Include="Assets\Scripts\MouseActions.cs" />
      <Compile Include="Assets\Scripts\MultiplayerGame.cs" />
+     <Compile Include="Assets\Scripts\Sound.cs" />
      <Compile Include="Assets\SWNetwork\Scripts\Lobby.cs" />
      <Compile Include="Assets\Scripts\Card.cs" />
      <Compile Include="Assets\Scripts\ProtectedData.cs" />
      <Compile Include="Assets\SWNetwork\Tools\NonPlayerFilterable.cs" />
+     <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\NetCode.cs" />
      <Compile Include="Assets\Scripts\Game.cs" />
      <Compile Include="Assets\Scripts\CardAnimator.cs" />
